@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Pet Shop</title>
+  </head>
+
+  <body>
+    <link rel="stylesheet" href="styles.css">
+<h1 id="title"> Pet Shop </h1>
+<p id="description"> <em>Online Pet Order</em> </p>
+<form id="survey-form"> 
+  <p id="description"> <strong>Contact Info</strong> </p>
+    <br>
+  <label id="name-label">
+   <input type="text" id=name required placeholder= "Joe Joeson">
+   </br>
+  </label>
+  <br>
+  <label id="email-label">
+   <input type="email" id=email required placeholder= "jojo@jomail.com">
+   </br>
+  </label>
+<br>
+  <p id="description"> <strong>Desired Pet Info</strong> </p>
+  <label id="number-label">
+   <input type="number" id=number min=1 max=10 placeholder="0">
+   </br>
+  </label>
+  <br>
+  <select id="dropdown"> 
+    <option> Dogs </option>
+    <option> Cats </option>
+    <option> Mice </option>
+    <option> Parrots </option>
+  </select>
+  </br>
+  <br>
+  <input type="radio" name="q1" value="C"> Small
+  <input type="radio" name="q1" value="CD"> Medium
+  <input type="radio" name="q1" value="D"> Large
+  </br>
+  <br>
+  <input type="checkbox" name="friendly" value="E"> Friendly
+  <input type="checkbox" name="soft" value="F"> Soft
+  <input type="checkbox" name="trained" value="F"> Trained
+  </br>
+  <br>
+    <p id="description"> <strong>Additional Requests/Comments</strong> </p>
+  <textarea name="More requests"> </textarea>
+  <button id=submit> Continue to Checkout </button>
+</form>
+
+  </body>
+</html>

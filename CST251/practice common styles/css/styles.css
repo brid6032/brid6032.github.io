@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(175, 160, 73);
+}
+h1 {
+    background-color:rgb(1, 1, 86);
+    color:white;
+    text-align: center;
+    font-size: 4rem;
+    padding: 20px 20px 20px 20px;
+    margin: 0px 0px;
+    font-family: 'Qwitcher Grypen', sans-serif;
+}
+
+h2 {
+    background-color: lightskyblue;
+    color:yellow;
+    text-align: right;
+    padding: 20px 20px 20px 20px;
+    margin: 0px 0px;
+    font-family: Arial, Helvetica, sans-serif
+
+}
+
+img {
+    border-radius: 60px 60px;
+    margin: 20px auto 20px auto;
+    width:100%;
+
+}
+
+footer{
+    background-color:rgb(1, 1, 86);
+    color: white;
+    text-align: right;
+    padding: 5px 5px;
+
+}
+
+

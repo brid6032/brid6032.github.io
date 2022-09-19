@@ -1,0 +1,31 @@
+body {background-image: url(https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); background-repeat: no-repeat; background-size: cover; color:white;margin: auto;}
+
+h1 {text-align: center;}
+
+p {text-align: center;}
+
+#survey-form {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 5px; color: white;
+  background-color: rgba(35, 47, 71, 50%);
+}
+
+#name-label {border: 3px solid green;
+}
+
+#email-label {border: 3px solid green;
+}
+
+#number-label {border: 3px solid green;
+}
+
+#dropdown {border: 3px solid green;
+}
+
+textarea {width: 98.5%;   border: 3px solid green; 
+}
+
+button {width: 100%;   border: 3px solid green;
+}

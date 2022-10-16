@@ -1,4 +1,234 @@
+main {
+    position:absolute;
+    top:0;
+    left:150px;
+    right:20px;
+}
+
 body {
-    color: white
-    background-color:darkolivegreen
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(84, 106, 47, 1);
+    background-size:cover;
+    
+}
+
+a {
+    color: white;
+    font-style: italic;
+}
+
+a:hover {
+    font-size: large;
+    font-style:normal;
+    font-weight: bold;
+    color:rgb(193, 61, 25)
+}
+
+h1 {
+    color:wheat;
+    font-weight: bolder;
+    background-color: rgb(193, 61, 25);
+    text-align: center;
+}
+
+div {
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items:center;
+    text-align: center;
+}
+
+h2 {
+    color:wheat;
+    font-weight: bolder;
+}
+
+h3 {
+    text-align: center;
+    width: fit-content;
+}
+
+nav {
+    position:fixed;
+    top:0;
+    left:0;
+    width:120px;
+    height: 100%;
+    border:1px solid teal;
+    background-image:url('img/bamboo.jpg');
+    background-size: contain;
+    z-index:1;
+}
+
+nav::before{
+    content: "Navigation Menu";
+    background-color: teal;
+    width:100%;
+    display:block;
+    text-align:center;
+}
+
+
+
+nav ul li {
+    list-style: none;
+    color:wheat;
+    margin: 30% 0;
+}
+
+#all-sign {
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#all-sign:hover {
+    width:90%;
+}
+
+div img:hover{
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+
+@media (max-width:768px) {
+    nav {
+        position:static;
+        top:5px;
+        left:0;
+        width:100%;
+        height: 150px;
+        overflow:none;
+        border:1px solid teal;
+        background-size: cover;
+        margin: 0 0;
+        
+    }
+
+    nav::before{
+        content: "Navigation Menu";
+        background-color: teal;
+        width:100%;
+        display:block;
+        font-size:1.5rem;
+        text-align:center;
+    }
+
+    nav ul {
+        list-style: none;
+        color:wheat;
+        display:inline-flex;
+        justify-content:space-between;
+        align-items:center;
+        font-size:1rem;
+        height: 80px;
+        width: 80%;
+
+    }
+
+    main {
+        position:absolute;
+        top:180px;
+        left:30px;
+        right:0;
+        width:90%;
+        text-align:center;
+    }
+
+    #all-sign {
+        width: 90%;
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+    }
+    
+    #all-sign:hover {
+        width:120%;
+        position:relative;
+        left:-10%;
+    }
+
+        a:hover {
+            font-size: 2rem;
+            
+
+    }
+}
+
+@media (max-width:480px) {
+        nav {
+        height: 120px;
+        overflow:scroll;
+        
+    }
+
+    nav::before{
+        content: "Navigation Menu";
+        background-color: teal;
+        width:100%;
+        display:block;
+        font-size:2rem;
+        text-align:center;
+    }
+
+    nav ul {
+        display: block;
+        flex-direction: column;
+        text-align: center;
+        justify-content:flex-start;
+        margin-top: 0%;
+        font-size: 2rem;
+        height: 0px;
+        width: 90%;
+
+    }
+
+    main {
+        position:absolute;
+        top:130px;
+        left:30px;
+        right:0;
+        width:90%;
+        text-align:center;
+    }
+
+    #all-sign {
+        width: 90%;
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+    }
+    
+    #all-sign:hover {
+        width:120%;
+        position:relative;
+
+    }
+
+    a:hover {
+        font-size: 2rem;
+        
+
+}
+    
 }

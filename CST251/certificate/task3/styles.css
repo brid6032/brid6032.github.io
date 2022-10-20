@@ -1,0 +1,50 @@
+main {
+    position:absolute;
+    top:0;
+    left:150px;
+    right:20px;
+}
+
+nav {
+    position:fixed;
+    top:0;
+    left:0;
+    width:120px;
+    height: 100%;
+    background-color: rgb(85, 83, 95);
+    background-size: contain;
+    z-index:1;
+    color:white;
+}
+
+nav h1 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 5px;
+}
+
+nav a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content:flex-start;
+    margin-top: 0%;
+    font-size: 2rem;
+    height: 20%;
+    width: 90%;
+    color:white;
+}
+
+nav a:hover{
+    font-size:3rem;
+}
+
+nav a:active{
+    color:red;
+}
+
+@media (max-width:768px) {
+    body{
+        background-color: rgb(39, 37, 41);
+        color:white;
+    }

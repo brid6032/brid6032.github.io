@@ -9,87 +9,90 @@
 </head>
 <body>
   <nav id="navbar">
-    <header> <h1>Information</h1> </header> 
-    <a href="#A" class="nav-link">A</a>
-    <a href="#B" class="nav-link">B</a>
-    <a href="#C" class="nav-link">C</a>
-    <a href="#D" class="nav-link">D</a>
-    <a href="#E" class="nav-link">E</a>
+    <header> <h1>Navigation</h1> </header> 
+    <a href="#A" class="nav-link">HTML</a>
+    <a href="#B" class="nav-link">Semantic Tags</a>
+    <a href="#C" class="nav-link">CSS</a>
+    <a href="#D" class="nav-link">CSS Positioning</a>
+    <a href="#E" class="nav-link">Media Queries</a>
     </nav>
  <main id="main-doc">
    <section class="main-section" id="A">
-     <header><h2>A</h2></header>
-     <p>AA</p>
-     <p>AAA</p>
+     <header><h2>HTML</h2></header>
+     <p>HTML stands for hyper text markup language.</p>
+     <p>HTML is not a programming language, its a markup language.</p>
      <code>
-       big smart code things
+       Some things to do with and useful info about HTML:
       </code>
        <ul>
-         <li>1</li>
-         <li>2</li>
-         <li>3</li>
-         <li>4</li>
-         <li>5</li>
+         <li>Adding content to a webpage</li>
+         <li>Edit HTML files in Plain Text Editor</li>
+         <li>HTML tags can be (and usually are) nested
+        </li>
+         <li>HTML tags aren’t case sensitive, but its conventional to keep them lowercase</li>
+         <li>Indent nesting tags to keep organized</li>
        </ul>
    </section>
    <section class="main-section" id="B">
-     <header><h2>B</h2></header>
-     <p>BB</p>
-     <p>BBB</p>
+     <header><h2>Semantic Tags</h2></header>
+     <p>Use semantic tags to provide structure to a webpage. They require an opening and closing tag</p>
+     <p>Some examples: header, nav, main, figure, section, and footer</p>
      <code>
-       big smart code things
+       Some more in-depth tags and info:
        </code>
         <ul>
-         <li>1</li>
-         <li>2</li>
-         <li>3</li>
-         <li>4</li>
-         <li>5</li>
+         <li>"h1" is the tag used for the main heading. h# tags cotinue on to be smaller and smaller subheadings</li>
+         <li>"br" is used to make a line break, like pressing "enter". It does not require a closing tag</li>
+         <li>"p" is used before and after a paragraph</li>
+         <li>"a" is used to link to media</li>
+         <li>"form" allows for user inputs</li>
        </ul>
      </section> 
    <section class="main-section" id="C">
-     <header><h2>C</h2></header>
-     <p>CC</p>
-     <p>CCC</p>
+     <header><h2>CSS</h2></header>
+     <p>CSS stands for Cascading Style Sheets</p>
+     <p>CSS is an external file used to apply styles to HTML, following the format: Selector {property:value;} </p>
      <code>
-       big smart code things
+       Here are some examples of tags used for css styles:
        </code>
         <ul>
-         <li>1</li>
-         <li>2</li>
-         <li>3</li>
-         <li>4</li>
-         <li>5</li>
+         <li>nav{ font-size:5px}- This changes the size of the text in the navigation</li>
+         <li>main{ background-color: gray}- This makes the website background gray </li>
+         <li>main {text-color: white}- This makes the website have white text</li>
+         <li>a {font-weight: bold}- This makes a hyperlink bold</li>
+         <li>h1 {text-align: center}- This centers the text of a main heading</li>
        </ul>
      </section>
    <section class="main-section" id="D">
-     <header><h2>D</h2></header>
-     <p>DD</p>
-     <p>DDD</p>
+     <header><h2>CSS Positioning</h2></header>
+     <p>Use the CSS property Position to change where an element appears on a page</p>
+     <p>The default position value is "static"</p>
+     <code>
+      Here are all 5 position arguments:
+      </code>
        <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
+        <li>Static: the default value. No special behaviors</li>
+        <li>Relative: the element is positioned relative to its normal position</li>
+        <li>Fixed: the element is positioned on the page and doesn't move if the viewer scrolls down</li>
+        <li>Absolute: the element is positioned on the page relative to the edges of its container</li>
+        <li>Sticky: the element will "stick" to a certain position when scrolling</li>
       </ul>
-      <code>
-       big smart code things
-       </code>
      </section>
    <section class="main-section" id="E">
-     <header><h2>E</h2></header>
-     <p>EE</p>
-     <p>EEE</p>
+     <header><h2>Media Queries</h2></header>
+     <p>A CSS Selector used for responsive webpages</p>
+     <p>Not all websites are on desktop computer screens! They need to change size to fit the screen they are on!</p>
      <code>
-       big smart code things
+      @media (max-width: number px) {
        </code>
         <ul>
-         <li>1</li>
-         <li>2</li>
-         <li>3</li>
-         <li>4</li>
-         <li>5</li>
+         <li>1024px for Desktop</li>
+         <li>768px for Tablets</li>
+         <li>480px for Phones</li>
+         <li>Larger queries go up higher</li>
+         <li>Order example: @media (max-width: 768px) {}
+          @media (max-width: 480px) {}
+        </li>
         </ul>
      </section>
    </main>
